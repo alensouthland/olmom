@@ -159,6 +159,7 @@ input[type=text]:focus {
 }
 
 input[type=submit]  {
+    color: var(--darkText);
     width: 100%;
     padding: 10px 20px;
     height: 42px;
