@@ -146,6 +146,7 @@ textarea    {
     background-color: #ffffff00;
     transition: 0.6s;
     opacity: 0;
+    border-radius: 0px;
 }textarea:focus {
     border-bottom: 1.5px solid var(--darkText);
     outline: none;
@@ -169,6 +170,7 @@ input[type=text] {
     margin: 0px 0;
     border: none;
     border-bottom: 1.5px solid #969696;
+    border-radius: 0px;
     background-color: #ffffff00;
     transition: 0.6s;
     opacity: 0;
