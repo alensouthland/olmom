@@ -262,7 +262,7 @@ input[type=submit]:nth-child(11)   {
 }
 
 
-@media screen and (max-width: 700px)	{
+@media screen and (max-width: 600px)	{
 	
 	nav    {
         padding: 1%;
@@ -276,4 +276,13 @@ input[type=submit]:nth-child(11)   {
         padding: 1% 10%;
     }
 	
+}
+
+@media screen and (max-width: 600px)	{
+    
+    .right_nav  {
+        display: flex;
+        gap: 0.5em;
+    }
+    
 }
