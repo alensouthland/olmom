@@ -12,7 +12,6 @@ body{
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
-    overflow: hidden;
     color: var(--darkText);
 }
 
@@ -104,7 +103,7 @@ p   {
     justify-content: center;
     height: 60vh;
     position: relative;
-    padding: 1vh 20vh;
+    padding: 10% 20vh;
     font-family: 'Instrument Sans';
 }
 
