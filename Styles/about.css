@@ -328,6 +328,10 @@ input[type=submit]:nth-child(8)   {
         width: 100%;
         padding: 5px 0px;
     }
+
+    textarea    {
+        width: 100%;
+    }
 	
 }
 @media screen and (max-width: 300px)	{
