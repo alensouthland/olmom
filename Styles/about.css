@@ -12,6 +12,7 @@ body{
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
+
     color: var(--darkText);
 }
 
@@ -317,7 +318,7 @@ input[type=submit]:nth-child(8)   {
 @media screen and (max-width: 700px)	{
 	
 	nav    {
-        padding: 10px 0px;
+        padding: 1%;
     }
 
     h1  {
@@ -337,11 +338,4 @@ input[type=submit]:nth-child(8)   {
         width: 99%;
     }
 	
-}
-@media screen and (max-width: 300px)	{
-
-    .main   {
-        padding: 1% 1px;
-    }
-
 }

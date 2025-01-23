@@ -12,6 +12,7 @@ body{
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
+    overflow: hidden;
 	text-align: center;
     color: white;
 }
@@ -264,7 +265,15 @@ input[type=submit]:nth-child(11)   {
 @media screen and (max-width: 700px)	{
 	
 	nav    {
-        padding: 10px 1px;
+        padding: 1%;
+    }
+
+    h1  {
+        margin-left: 0px;
+    }
+
+    .main   {
+        padding: 1% 10%;
     }
 	
 }
