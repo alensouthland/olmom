@@ -138,6 +138,7 @@ textarea    {
     outline: none;
     border: none;
     padding-top: 10px;
+    padding-left: 0px;
     font-family: 'Instrument Serif';
     font-style: italic;
     font-size: 1.2em;
