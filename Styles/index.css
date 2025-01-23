@@ -6,6 +6,7 @@
 
 
 body{
+	text-decoration: none;
     background-image: url("/Images/Blue_book.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -68,10 +69,10 @@ p   {
     font-size: 1.1em;
     letter-spacing: 0.02em;
     color: #ffffff;
-    border: 0px solid rgba(255, 255, 255, 0);
+    border-bottom: 0px solid rgba(255, 255, 255, 0);
     transition-duration: 0.9s;
 }.nav_link:hover    {
-    border-bottom: 2px solid var(--darkText);
+    border-bottom: 2px solid white;
     transition-duration: 0.3s;
     margin-bottom: 5px;
 }
@@ -258,4 +259,13 @@ input[type=submit]:nth-child(11)   {
       opacity: 1;
       filter: blur(0);
     }
+}
+
+
+@media screen and (max-width: 700px)	{
+	
+	nav    {
+        padding: 10px 1px;
+    }
+	
 }
