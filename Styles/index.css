@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
 
+:root   {
+    --darkText: rgb(41, 47, 47);
+}
+
 
 body{
     background-image: url("/Images/Blue_book.png");
@@ -7,6 +11,8 @@ body{
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
+	overflow: hidden;
+	color: white;
 }
 
 nav{
@@ -30,8 +36,8 @@ nav{
 }
 
 .right_nav  {
-    display: flex;
-    gap: 1em;
+	display: flex;
+  	gap: 1em;
 }
 
 .nav_link   {
@@ -75,20 +81,20 @@ a   {
 }
 
 .button {
-  text-decoration: wavy;
-  border: none;
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 10px 20px 10px 20px;
-  transition: 0.6s;
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  opacity: 0;
-  filter: blur(4px);
-  height: 25px;
+	text-decoration: wavy;
+  	border: none;
+  	border: 1px solid white;
+  	border-radius: 20px;
+  	padding: 10px 20px 10px 20px;
+  	transition: 0.6s;
+  	transform: scale(0.94);
+  	animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  	display: flex;
+  	align-items: center;
+  	text-align: center;
+  	opacity: 0;
+  	filter: blur(4px);
+  	height: 25px;
 }
 .button:hover  {
     margin-top: 2px;
