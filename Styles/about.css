@@ -11,7 +11,6 @@ body{
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
-    overflow: hidden;
     color: var(--darkText);
 }
 
@@ -161,6 +160,7 @@ input[type=text]:focus {
 input[type=submit]  {
     color: var(--darkText);
     width: 100%;
+    font-weight: 400;
     padding: 10px 20px;
     height: 42px;
     background-color: #ffffff00;
@@ -258,4 +258,12 @@ input[type=submit]:nth-child(11)   {
       opacity: 1;
       filter: blur(0);
     }
+}
+
+@media screen and (max-width: 700px)	{
+	
+	nav    {
+        padding: 10px 1px;
+    }
+	
 }
