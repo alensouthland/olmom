@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
+
+body{
+    background-image: url("/Images/Blue_book.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site_logo  {
+    opacity: 0.6;
+    padding: 0px 10px;
+    height: 40px;
+    width: auto;
+    mix-blend-mode: darken;
+    border: 0px solid white;
+    transition-duration: 0.6s;
+}.site_logo:hover   {
+    opacity: 0.8;
+    mix-blend-mode: color-burn;
+    transition-duration: 0.3s;
+}
+
+.right_nav  {
+    display: flex;
+    gap: 1em;
+}
+
+.nav_link   {
+    font-family: 'Instrument Serif';
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+
+    font-style: italic;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    mix-blend-mode: multiply;
+    color: #ffffff;
+    border: 0px solid rgba(255, 255, 255, 0);
+    transition-duration: 0.9s;
+}.nav_link:hover    {
+    border-bottom: 2px solid white; 
+    transition-duration: 0.3s;
+    margin-bottom: 5px;
+}
+
+.main    {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 0px solid red;
+    height: 50vh;
+    padding: 10% 10%;
+    font-family: 'Instrument Sans';
+}
+
+a   {
+    text-decoration: wavy;
+    font-family: 'Instrument Sans';
+    font-size: 1em;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.button {
+  text-decoration: wavy;
+  border: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  transition: 0.6s;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  filter: blur(4px);
+  height: 25px;
+}
+.button:hover  {
+    margin-top: 2px;
+    background-color: rgba(255, 255, 255, 0.213);
+    transition: 0.3s;
+    padding-bottom: 13px;
+    box-shadow: 0px 5px whitesmoke;
+    height: 20px;
+}
+
+.outputDetails  {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+h1 {
+    font-family: 'Instrument Serif', serif;
+    max-width: 25ch;
+    font-size: 3em;
+    line-height: 1.3em;
+    text-align: center;
+    font-weight: 400;
+    color: azure;
+
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  .button:nth-child(1) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
