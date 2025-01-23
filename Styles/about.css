@@ -143,6 +143,7 @@ a   {
 
 form    {
     width: 60%;
+    border: 1px solid red;
     transform: scale(0.94);
     animation: scale 1.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
