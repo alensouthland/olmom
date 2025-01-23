@@ -12,7 +12,7 @@ body{
     background-position: center;  
     background-size: cover;
     overflow: hidden;
-    color: var(--darkText)
+    color: var(--darkText);
 }
 
 nav{

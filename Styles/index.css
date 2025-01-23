@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Lusitana:wght@400;700&display=swap');
 
 :root   {
     --darkText: rgb(41, 47, 47);
@@ -6,13 +6,13 @@
 
 
 body{
-    background-image: url("/Images/Wall-11.jpeg");
+    background-image: url("/Images/Blue_book.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
-	overflow: hidden;
-	color: white;
+    overflow: hidden;
+    color: white;
 }
 
 nav{
@@ -21,8 +21,26 @@ nav{
     justify-content: space-between;
 }
 
+p   {
+    font-family: 'Instrument Sans';
+    font-size: 1.1em;
+    max-width: 500px;
+    line-height: 1.8em;
+
+    opacity: 0;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    filter: blur(4px);
+}
+
+.about_content  {
+    border-radius: 20px;
+    padding: 0px 20px;
+    background-blend-mode: darken;
+}
+
 .site_logo  {
-    opacity: 0.6;
+    opacity: 0.8;
     padding: 0px 10px;
     height: 40px;
     width: auto;
@@ -30,14 +48,14 @@ nav{
     border: 0px solid white;
     transition-duration: 0.6s;
 }.site_logo:hover   {
-    opacity: 0.8;
+    opacity: 1;
     mix-blend-mode: color-burn;
     transition-duration: 0.3s;
 }
 
 .right_nav  {
-	display: flex;
-  	gap: 1em;
+    display: flex;
+    gap: 1em;
 }
 
 .nav_link   {
@@ -51,10 +69,10 @@ nav{
     letter-spacing: 0.02em;
     mix-blend-mode: multiply;
     color: #ffffff;
-    border: 0px solid rgba(255, 255, 255, 0);
-    transition-duration: 0.9s;
+    border: 0px solid white;
+    transition-duration: 0.6s;
 }.nav_link:hover    {
-    border-bottom: 2px solid white; 
+    border-bottom: 2px solid white;
     transition-duration: 0.3s;
     margin-bottom: 5px;
 }
@@ -81,21 +99,22 @@ a   {
 }
 
 .button {
-	text-decoration: wavy;
-  	border: none;
-  	border: 1px solid white;
-  	border-radius: 20px;
-  	padding: 10px 20px 10px 20px;
-  	transition: 0.6s;
-  	transform: scale(0.94);
-  	animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  	display: flex;
-  	align-items: center;
-  	text-align: center;
-  	opacity: 0;
-  	filter: blur(4px);
-  	height: 25px;
+    text-decoration: none;
+    border: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    transition: 0.6s;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    filter: blur(4px);
+    height: 25px;
 }
+
 .button:hover  {
     margin-top: 2px;
     background-color: rgba(255, 255, 255, 0.213);
@@ -105,16 +124,63 @@ a   {
     height: 20px;
 }
 
-.outputDetails  {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+form    {
+    width: 60%;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+label   {
+    font-family: 'Instrument Serif';
+    font-size: 1.2em;
+    opacity: 0;
+}
+
+input[type=text] {
+    color: var(--darkText);
+    box-sizing: border-box;
+    font-family: 'Instrument Serif';
+    font-style: italic;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px 3px;
+    margin: 0px 0;
+    border: none;
+    border-bottom: 1.5px solid #969696;
+    background-color: #ffffff00;
+    transition: 0.6s;
+    opacity: 0;
+
+}
+
+input[type=text]:focus {
+    border-bottom: 1.5px solid var(--darkText);
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type=submit]  {
+    width: 100%;
+    padding: 10px 20px;
+    height: 42px;
+    background-color: #ffffff00;
+    border: 1.5px solid black;
+    font-family: 'Instrument Sans';
+    font-size: 1em;
+    border-radius: 17px;
+    transition-duration: 0.3s;
+
+    transition: 0.6s;
+    opacity: 0;
+}
+
+input[type=submit]:hover {
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.213);
+    box-shadow: 0px 5px var(--darkText);
+    padding-top: 6px;
+    height: 38px;
+    transition: 0.3s;
 }
 
 h1 {
@@ -122,52 +188,75 @@ h1 {
     max-width: 25ch;
     font-size: 3em;
     line-height: 1.3em;
-    text-align: center;
     font-weight: 400;
-    color: azure;
 
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  }
-  @keyframes scale {
+}
+  
+@keyframes scale {
     100% {
       transform: scale(1);
     }
-  }
+}
 
-  span {
+span {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
-  }
+}
 
-  span:nth-child(1) {
+span:nth-child(1) {
     animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
   
-  span:nth-child(2) {
+span:nth-child(2) {
     animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
   
-  span:nth-child(3) {
+span:nth-child(3) {
     animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
   
-  span:nth-child(4) {
+span:nth-child(4) {
     animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
   
-  span:nth-child(5) {
+span:nth-child(5) {
     animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
 
-  .button:nth-child(1) {
+.button:nth-child(1) {
     animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
 
-  @keyframes fade-in {
+p:nth-child(1)   {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+label:nth-child(1)   {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+input[type=text]:nth-child(2)   {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+label:nth-child(5)   {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+input[type=text]:nth-child(7)   {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+input[type=submit]:nth-child(11)   {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
     100% {
       opacity: 1;
       filter: blur(0);
     }
-  }
+}
