@@ -270,5 +270,9 @@ input[type=submit]:nth-child(11)   {
     h1  {
         margin-left: 0px;
     }
+
+    .main   {
+        padding: 2%;
+    }
 	
 }
