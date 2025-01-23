@@ -13,7 +13,7 @@ body{
     background-size: cover;
     overflow: hidden;
 	text-align: center;
-    color: var(--darkText);
+    color: white;
 }
 
 nav{
