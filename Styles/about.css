@@ -6,11 +6,13 @@
 
 
 body{
+    position: relative;
     background-image: url("/Images/Wall-11.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
+    overflow: hidden;
     color: var(--darkText);
 }
 
@@ -96,14 +98,13 @@ p   {
 }
 
 .main    {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    border: 0px solid red;
-    height: 50vh;
-    padding: 10% 20%;
+    justify-content: center;
+    height: 60vh;
+    position: relative;
+    padding: 1vh 20vh;
     font-family: 'Instrument Sans';
 }
 
