@@ -180,7 +180,7 @@ input[type=text]::placeholder  {
 }
 
 input[type=text] {
-    color: var(--darkText);
+    color: #1822af;
     box-sizing: border-box;
     font-family: 'Instrument Serif';
     font-style: italic;
