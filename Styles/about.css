@@ -34,7 +34,7 @@ p   {
 
 .about_content  {
     border-radius: 20px;
-    margin-top: -50px;
+    margin-top: -40px;
     background-blend-mode: darken;
 }
 
@@ -188,6 +188,7 @@ h1 {
     font-size: 3em;
     line-height: 1.3em;
     font-weight: 400;
+    margin-left: -40px;
 
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -264,6 +265,10 @@ input[type=submit]:nth-child(11)   {
 	
 	nav    {
         padding: 10px 1px;
+    }
+
+    h1  {
+        margin-left: 0px;
     }
 	
 }
