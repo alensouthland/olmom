@@ -301,5 +301,10 @@ input[type=submit]:nth-child(8)   {
     .main   {
         padding: 2%;
     }
+
+    input[type=text]    {
+        width: 100%;
+        padding: 0px;
+    }
 	
 }
