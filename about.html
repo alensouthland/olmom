@@ -23,12 +23,32 @@
             <span>the</span>
             <span>book</span> 
         </h1>
-        <div class="about_content">
+        <div class="about_content" id="text">
             <p>
-                In the late 1980s and early 1990s, the mentally impaired brother, of an English Catholic Lady called Olive Dawson, received spiritual messages from the Virgin Mary and quoted them at very regular intervals and with utmost precision. The genesis of the little Blue Book seems mysterious and requires explanation: A young man, who did not correspond to the normal image of knowledge and learning, was able to communicate hundreds of messages in the most precise manner. Olive Dawson, his older sister, then began to write down these messages, compiled them in the the little blue book and began to publish them for a broader audience.
+                
             </p>
         </div>
     
     </div>
+    <script>
+        const paragraph = document.getElementById('text');
+
+        // Original paragraph text
+        const paragraphText = "In the late 1980s and early 1990s, the mentally impaired brother, of an English Catholic Lady called Olive Dawson, received spiritual messages from the Virgin Mary and quoted them at very regular intervals and with utmost precision. The genesis of the little Blue Book seems mysterious and requires explanation: A young man, who did not correspond to the normal image of knowledge and learning, was able to communicate hundreds of messages in the most precise manner. Olive Dawson, his older sister, then began to write down these messages, compiled them in the the little blue book and began to publish them for a broader audience.";
+
+        // Split paragraph into words and wrap each word in a span
+        const words = paragraphText.split(' ').map(word => `<span class="about_content">${word}</span>`).join(' ');
+        paragraph.innerHTML = words;
+
+        const wordElements = document.querySelectorAll('.about_content');
+
+        window.addEventListener('load', () => {
+            wordElements.forEach((word, index) => {
+                setTimeout(() => {
+                    word.classList.add('visible');
+                }, index * 16); // Adjust delay for each word
+            });
+        });
+    </script>
 </body>
 </html>

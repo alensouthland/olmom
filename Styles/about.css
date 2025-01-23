@@ -33,9 +33,28 @@ p   {
 }
 
 .about_content  {
-    border-radius: 20px;
-    margin-top: -40px;
+    border-radius: 0px;
     background-blend-mode: darken;
+    line-height: 26px;
+
+    color: transparent;
+    filter: blur(12px);
+    opacity: 0;
+    display: inline-block;
+    transition: color 0.5s ease, filter 0.5s ease, opacity 0.5s ease;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1) 25%, rgba(0,0,0,0.1) 75%);
+    background-size: 200% 200%;
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    -webkit-mask-size: cover;
+
+}
+.about_content.visible {
+    color: #333;
+    filter: blur(0);
+    opacity: 1;
+    background: none;
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%);
+    -webkit-mask-size: cover;
 }
 
 .site_logo  {
@@ -84,7 +103,7 @@ p   {
     
     border: 0px solid red;
     height: 50vh;
-    padding: 10% 10%;
+    padding: 10% 20%;
     font-family: 'Instrument Sans';
 }
 
@@ -292,7 +311,7 @@ input[type=submit]:nth-child(8)   {
 @media screen and (max-width: 700px)	{
 	
 	nav    {
-        padding: 10px 1px;
+        padding: 10px 0px;
     }
 
     h1  {
@@ -300,12 +319,19 @@ input[type=submit]:nth-child(8)   {
     }
 
     .main   {
-        padding: 2%;
+        padding: 1% 10%;
     }
 
     input[type=text]    {
         width: 100%;
-        padding: 0px;
+        padding: 5px 0px;
     }
 	
+}
+@media screen and (max-width: 300px)	{
+
+    .main   {
+        padding: 1% 1px;
+    }
+
 }
