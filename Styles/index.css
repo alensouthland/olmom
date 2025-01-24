@@ -100,7 +100,7 @@ a   {
     height: 25px;
 }
 
-.button:hover  {
+.button:active:hover  {
     margin-top: 2px;
     background-color: rgba(255, 255, 255, 0.213);
     transition: 0.3s;
