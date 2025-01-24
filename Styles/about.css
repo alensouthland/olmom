@@ -15,7 +15,8 @@ html {
 
 body{
     text-decoration: none;
-    background-image: url("/Images/Wall-111.jpeg");
+    /*background-image: url("/Images/Wall-111.jpeg");*/
+    background-color: #969696;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;  
