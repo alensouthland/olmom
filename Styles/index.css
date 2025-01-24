@@ -23,24 +23,6 @@ nav{
     justify-content: space-between;
 }
 
-p   {
-    font-family: 'Instrument Sans';
-    font-size: 1.1em;
-    max-width: 500px;
-    line-height: 1.8em;
-
-    opacity: 0;
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-    filter: blur(4px);
-}
-
-.about_content  {
-    border-radius: 20px;
-    padding: 0px 20px;
-    background-blend-mode: darken;
-}
-
 .site_logo  {
     opacity: 0.8;
     padding: 8px 10px;
@@ -125,65 +107,6 @@ a   {
     padding-bottom: 13px;
     box-shadow: 0px 5px whitesmoke;
     height: 20px;
-}
-
-form    {
-    width: 60%;
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-}
-
-label   {
-    font-family: 'Instrument Serif';
-    font-size: 1.2em;
-    opacity: 0;
-}
-
-input[type=text] {
-    color: var(--darkText);
-    box-sizing: border-box;
-    font-family: 'Instrument Serif';
-    font-style: italic;
-    font-size: 1.2em;
-    width: 100%;
-    padding: 10px 3px;
-    margin: 0px 0;
-    border: none;
-    border-bottom: 1.5px solid #969696;
-    background-color: #ffffff00;
-    transition: 0.6s;
-    opacity: 0;
-
-}
-
-input[type=text]:focus {
-    border-bottom: 1.5px solid var(--darkText);
-    outline: none;
-    transition: 0.3s;
-}
-
-input[type=submit]  {
-    width: 100%;
-    padding: 10px 20px;
-    height: 42px;
-    background-color: #ffffff00;
-    border: 1.5px solid black;
-    font-family: 'Instrument Sans';
-    font-size: 1em;
-    border-radius: 17px;
-    transition-duration: 0.3s;
-
-    transition: 0.6s;
-    opacity: 0;
-}
-
-input[type=submit]:hover {
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255, 0.213);
-    box-shadow: 0px 5px var(--darkText);
-    padding-top: 6px;
-    height: 38px;
-    transition: 0.3s;
 }
 
 h1 {
