@@ -5,6 +5,8 @@
 }
 
 html {
+    background-image: url("/Images/Wall-111.jpeg");
+    background-size: cover;
     scroll-behavior: smooth;
     margin: 0px !important;
     padding: 0px !important;
@@ -16,7 +18,7 @@ html {
 body{
     text-decoration: none;
     /*background-image: url("/Images/Wall-111.jpeg");*/
-    background-color: #969696;
+    /*background-color: #969696;*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;  
