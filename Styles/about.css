@@ -6,14 +6,14 @@
 
 
 body{
-    position: relative;
+    text-decoration: none;
     background-image: url("/Images/Wall-111.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;  
     background-size: cover;
     overflow: auto;
-
+    text-align: center;
     color: var(--darkText);
 }
 
@@ -36,6 +36,7 @@ p   {
 }
 
 .about_content  {
+    text-align: left;
     border-radius: 0px;
     background-blend-mode: darken;
     line-height: 26px;
@@ -101,15 +102,13 @@ p   {
 }
 
 .main    {
-    display: flex;
+    display: block;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+
     margin-top: -80px;
-    z-index: -1;
     height: 60vh;
-    position: relative;
-    padding: 10% 25%;
+    padding: 12% 25%;
     font-family: 'Instrument Sans';
 }
 
@@ -148,7 +147,8 @@ a   {
 }
 
 form    {
-    width: 90%;
+    width: 100%;
+    text-align: left;
     transform: scale(0.94);
     animation: scale 1.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
@@ -243,9 +243,8 @@ input[type=submit]:hover {
 
 h1 {
     font-family: 'Instrument Serif', serif;
-    max-width: 25ch;
+    width: 100%;
     font-size: 3em;
-    line-height: 1.3em;
     font-weight: 400;
     margin-left: -5px;
 
@@ -321,7 +320,7 @@ input[type=submit]:nth-child(8)   {
 }
   
 
-@media screen and (max-width: 780px)	{
+@media screen and (max-width: 768px)	{
 	
 	nav    {
         padding: 1%;
@@ -337,7 +336,6 @@ input[type=submit]:nth-child(8)   {
         text-align: center;
         border: 0px solid red;
         padding: 1% 5%;
-        margin-top: 0px;
     }
     .about_content  {
         text-align: left;
@@ -356,28 +354,32 @@ input[type=submit]:nth-child(8)   {
     }
 
     textarea    {
-        width: 99%;
+        width: 100%;
     }
 	
 }
 
-@media screen and (max-height: 599px)	{
+@media screen and (max-height: 799px)	{
 
 	body 	{
 		overflow: scroll;
 	}
 
     .main   {
-        display: block;
+        padding-top: 8%;
     }
     
 }
 
-@media screen and (max-width: 330px)	{
+@media screen and (max-width: 425px)	{
 
     body 	{
 		overflow: scroll;
 	}
+
+    .main   {
+        margin-top: 0px;
+    }
     
     .right_nav  {
         display: flex;
