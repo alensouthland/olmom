@@ -360,6 +360,18 @@ input[type=submit]:nth-child(8)   {
 	
 }
 
+@media screen and (max-height: 599px)	{
+
+	body 	{
+		overflow: scroll;
+	}
+
+    .main   {
+        display: block;
+    }
+    
+}
+
 @media screen and (max-width: 330px)	{
 
     body 	{
@@ -384,17 +396,4 @@ input[type=submit]:nth-child(8)   {
         margin-top: -20px;
     }
 
-}
-
-@media screen and (max-height: 440px)	{
-
-	body 	{
-		overflow: scroll;
-	}
-    
-    .right_nav  {
-        display: flex;
-        gap: 0.5em;
-    }
-    
 }

@@ -316,7 +316,7 @@ span:nth-child(13) {
 	
 }
 
-@media screen and (max-width: 330px)	{
+@media screen and (max-height: 440px)	{
 
 	body 	{
 		overflow: scroll;
@@ -329,7 +329,7 @@ span:nth-child(13) {
     
 }
 
-@media screen and (max-height: 440px)	{
+@media screen and (max-width: 330px)	{
 
 	body 	{
 		overflow: scroll;
