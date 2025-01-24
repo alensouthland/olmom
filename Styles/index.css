@@ -194,6 +194,20 @@ h1 {
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+
+h4	{
+	opacity: 0.25;
+	font-family: 'Instrument Serif', serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 2.5em;
+	margin-top: -0.7em;
+
+	max-width: 600px;
+
+	transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
   
 @keyframes scale {
     100% {
@@ -227,33 +241,48 @@ span:nth-child(5) {
     animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.button:nth-child(1) {
-    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
+/*---------------------------*/
 
-p:nth-child(1)   {
+span:nth-child(6) {
     animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
-
-label:nth-child(1)   {
-    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-input[type=text]:nth-child(2)   {
-    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-label:nth-child(5)   {
-    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-input[type=text]:nth-child(7)   {
+  
+span:nth-child(7) {
     animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
-
-input[type=submit]:nth-child(11)   {
+  
+span:nth-child(8) {
     animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+  
+span:nth-child(9) {
+    animation: fade-in 0.8s 1.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(10) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(12) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(13) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+/*---------------------------*/
+
+.button:nth-child(1) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+/*---------------------------*/
+
 
 @keyframes fade-in {
     100% {
@@ -265,6 +294,10 @@ input[type=submit]:nth-child(11)   {
 
 @media screen and (max-width: 600px)	{
 	
+	body 	{
+		overflow: scroll;
+	}
+
 	nav    {
         padding: 1%;
     }
@@ -274,12 +307,17 @@ input[type=submit]:nth-child(11)   {
     }
 
     .main   {
+		display: block;
         padding: 1% 10%;
     }
+
+	.button	{
+		justify-content: center;
+	}
 	
 }
 
-@media screen and (max-width: 600px)	{
+@media screen and (max-width: 330px)	{
     
     .right_nav  {
         display: flex;
