@@ -319,6 +319,7 @@ input[type=submit]:nth-child(8)   {
       filter: blur(0);
     }
 }
+  
 
 @media screen and (max-width: 600px)	{
 	
@@ -383,4 +384,17 @@ input[type=submit]:nth-child(8)   {
         margin-top: -20px;
     }
 
+}
+
+@media screen and (max-height: 440px)	{
+
+	body 	{
+		overflow: scroll;
+	}
+    
+    .right_nav  {
+        display: flex;
+        gap: 0.5em;
+    }
+    
 }
