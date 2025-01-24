@@ -293,10 +293,6 @@ span:nth-child(13) {
 
 
 @media screen and (max-width: 600px)	{
-	
-	body 	{
-		overflow: scroll;
-	}
 
 	nav    {
         padding: 1%;
@@ -318,6 +314,23 @@ span:nth-child(13) {
 }
 
 @media screen and (max-width: 330px)	{
+
+	body 	{
+		overflow: scroll;
+	}
+    
+    .right_nav  {
+        display: flex;
+        gap: 0.5em;
+    }
+    
+}
+
+@media screen and (max-height: 440px)	{
+
+	body 	{
+		overflow: scroll;
+	}
     
     .right_nav  {
         display: flex;

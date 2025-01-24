@@ -329,7 +329,7 @@ input[type=submit]:nth-child(8)   {
         display: block;
         text-align: center;
         border: 0px solid red;
-        padding: 10% 5%;
+        padding: 1% 5%;
     }
     .about_content  {
         text-align: left;
@@ -353,11 +353,28 @@ input[type=submit]:nth-child(8)   {
 	
 }
 
-@media screen and (max-width: 600px)	{
+@media screen and (max-width: 330px)	{
+
+    body 	{
+		overflow: scroll;
+	}
     
     .right_nav  {
         display: flex;
         gap: 0.5em;
+    }
+
+    h1  {
+        margin-left: -1px;
+        text-align: left;
+    }
+
+    .about_content  {
+        margin-top: -20px;
+    }
+
+    form    {
+        margin-top: -20px;
     }
 
 }
