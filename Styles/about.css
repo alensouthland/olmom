@@ -335,6 +335,7 @@ input[type=submit]:nth-child(8)   {
         text-align: center;
         border: 0px solid red;
         padding: 1% 5%;
+        margin-top: 0px;
     }
     .about_content  {
         text-align: left;

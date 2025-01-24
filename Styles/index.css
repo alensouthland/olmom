@@ -307,6 +307,7 @@ span:nth-child(13) {
     .main   {
 		display: block;
         padding: 1% 10%;
+		margin-top: 0px;
     }
 
 	.button	{
