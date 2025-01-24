@@ -329,6 +329,7 @@ input[type=submit]:nth-child(8)   {
 
     h1  {
         margin-left: 0px;
+        text-align: left;
     }
 
     .main   {
