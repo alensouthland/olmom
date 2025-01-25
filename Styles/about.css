@@ -125,7 +125,7 @@ a   {
     border: none;
     border: 1px solid white;
     border-radius: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 12px 20px;
     transition: 0.6s;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -138,15 +138,16 @@ a   {
 }
 
 .button:hover  {
-    margin-top: 2px;
+    margin-top: 4px;
     background-color: rgba(255, 255, 255, 0.213);
     transition: 0.3s;
     padding-bottom: 13px;
     box-shadow: 0px 5px whitesmoke;
-    height: 20px;
+    height: 25px;
 }
 
 form    {
+    display: block;
     width: 100%;
     text-align: left;
     transform: scale(0.94);
@@ -186,6 +187,15 @@ textarea    {
     color: #969696;
 }
 
+input[type="text"]:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+    outline: none;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
 input[type=text]::placeholder  {
     color: #969696;
 }
@@ -209,36 +219,37 @@ input[type=text] {
 
 }
 
-input[type=text]:focus {
+input[type=text]:focus:active  {
+    background-color: #ffffff00;
     border-bottom: 1.5px solid var(--darkText);
     outline: none;
     transition: 0.3s;
 }
 
 input[type=submit]  {
-    color: var(--darkText);
     width: 100%;
-    font-weight: 400;
-    padding: 10px 20px;
-    height: 42px;
+    padding: 10px 20px 12px 20px;
+
+    border: 1px solid black;
+    border-radius: 17px;
     background-color: #ffffff00;
-    border: 1.5px solid black;
+
+    color: var(--darkText);
     font-family: 'Instrument Sans';
     font-size: 1em;
-    border-radius: 17px;
-    transition-duration: 0.3s;
+    
     transition: 0.6s;
     opacity: 0;
-    margin-top: 40px;
 }
 
 input[type=submit]:hover {
-    margin-top: 42px;
-    background-color: rgba(255, 255, 255, 0.213);
+
+    background-color: rgba(0, 0, 0, 0.111);
     box-shadow: 0px 5px var(--darkText);
-    padding-top: 6px;
-    height: 38px;
+    padding: 8px 20px 10px 20px;
+    margin-top: 5px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 h1 {
@@ -265,7 +276,7 @@ span {
 }
 
 span:nth-child(1) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
   
 span:nth-child(2) {
@@ -274,14 +285,6 @@ span:nth-child(2) {
   
 span:nth-child(3) {
     animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-  
-span:nth-child(4) {
-    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-  
-span:nth-child(5) {
-    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .button:nth-child(1) {
@@ -305,11 +308,11 @@ label:nth-child(6)   {
 }
 
 textarea:nth-child(7)   {
-    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-input[type=submit]:nth-child(8)   {
-    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+input[type=submit]:nth-child(10)   {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
