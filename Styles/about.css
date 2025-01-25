@@ -4,15 +4,15 @@
     --darkText: rgb(41, 47, 47);
 }
 
-
 body{
-    text-decoration: none;
-    background-image: url("/Images/Wall-111.jpeg");
+    background-image: url(/Images/Wall-111.jpeg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;  
-    background-size: cover;
-    overflow: auto;
+    
+    height: 100vh;
+
     text-align: center;
     color: var(--darkText);
 }
@@ -20,6 +20,7 @@ body{
 nav{
     padding: 10px 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -322,26 +323,26 @@ input[type=submit]:nth-child(10)   {
       filter: blur(0);
     }
 }
+
+/*---------------WIDTH---------------*/
   
 
 @media screen and (max-width: 768px)	{
 
-	
 	nav    {
         padding: 1%;
     }
 
     h1  {
         margin-left: 0px;
-        text-align: left;
     }
 
     .main   {
-        display: block;
         text-align: center;
-        border: 0px solid red;
         padding: 1% 5%;
+        margin-top: 0px;
     }
+
     .about_content  {
         text-align: left;
     }
@@ -364,23 +365,11 @@ input[type=submit]:nth-child(10)   {
 	
 }
 
-@media screen and (max-height: 799px)	{
+@media screen and (max-width: 440px)	{
 
-	body 	{
-		overflow: scroll;
-	}
-
-    .main   {
-        padding-top: 8%;
-    }
-    
-}
-
-@media screen and (max-width: 425px)	{
-
-    body 	{
-		overflow: scroll;
-	}
+    /* body 	{
+		height: 100%;
+	} */
 
     .main   {
         margin-top: 0px;
@@ -401,3 +390,6 @@ input[type=submit]:nth-child(10)   {
     }
 
 }
+
+
+/*---------------HEIGHT---------------*/

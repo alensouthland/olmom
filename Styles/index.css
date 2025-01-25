@@ -4,26 +4,25 @@
     --darkText: rgb(41, 47, 47);
 }
 
-html   {
-    background-color: black;
-}
-
 body{
-    background-image: url(/Images/Blue_book-11.jpeg);
+    background-image: url(/Images/Blue_book.png);
     background-size: cover;
     background-position-x: center;
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
     height: 100dvh;
-    margin: 0;
 
 	text-align: center;
     color: white;
-
 }
 
 nav{
     padding: 10px 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -76,7 +75,6 @@ nav{
     border: 0px solid red;
     height: 50vh;
     padding: 10% 10%;
-    font-family: 'Instrument Sans';
 }
 
 a   {
@@ -220,8 +218,10 @@ span:nth-child(13) {
     }
 }
 
+/*---------------WIDTH---------------*/
 
-@media screen and (max-width: 600px)	{
+
+@media screen and (max-width: 768px)	{
 
 	nav    {
         padding: 1%;
@@ -232,41 +232,41 @@ span:nth-child(13) {
     }
 
     .main   {
-		display: block;
-        padding: 1% 10%;
-		margin-top: 0px;
+        text-align: center;
+		
     }
 
 	.button	{
 		justify-content: center;
 		height: 26px;
-		padding-bottom: 14px;
 	}
 	
 }
 
-@media screen and (max-height: 440px)	{
+@media screen and (max-width: 440px)	{
 
-	body 	{
-		overflow: scroll;
-	}
+    body {
+        padding-bottom: 10%;
+    }
     
     .right_nav  {
         display: flex;
         gap: 0.5em;
     }
+
+    .main   {
+        display: block;
+        padding: 1% 10%;
+    }
     
 }
 
-@media screen and (max-width: 330px)	{
+/*---------------HEIGHT---------------*/
 
-	body 	{
-		overflow: scroll;
-	}
-    
-    .right_nav  {
-        display: flex;
-        gap: 0.5em;
+@media screen and (max-height: 500px)   {
+
+    body    {
+        height: 500px;
     }
     
 }
