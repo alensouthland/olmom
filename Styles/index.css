@@ -6,6 +6,7 @@
 
 
 body{
+    height: 100dvh;
 	text-decoration: none;
     background-image: url("/Images/Blue_book-1.png");
     background-repeat: no-repeat;
