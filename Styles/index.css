@@ -5,15 +5,20 @@
 }
 
 html   {
-    background-image: url(/Images/Blue_book-1.png);
-    background-size: cover;
-    background-position: center;
-    height: 100dvh;
+    background-color: black;
 }
 
 body{
+    background-image: url(/Images/Blue_book-1.png);
+    background-size: cover;
+    background-position: center;
+
+    height: 100dvh;
+    margin: 0;
+
 	text-align: center;
     color: white;
+
 }
 
 nav{
