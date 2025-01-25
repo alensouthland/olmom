@@ -234,8 +234,10 @@ span:nth-child(13) {
     }
 
 	.button	{
+		width: 100%;
 		justify-content: center;
 		height: 28px;
+		padding-bottom: 14px;
 	}
 	
 }
