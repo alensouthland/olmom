@@ -20,7 +20,7 @@ body{
 }
 
 nav{
-    padding: 10px 20px;
+    padding: 8px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,8 +28,8 @@ nav{
 
 .site_logo  {
     opacity: 0.8;
-    padding: 8px 10px;
-    height: 40px;
+    padding: 8px 8px;
+    height: 36px;
     width: auto;
     mix-blend-mode: darken;
     transition-duration: 0.6s;
@@ -42,7 +42,7 @@ nav{
 }
 
 .right_nav  {
-	margin-top: -8px;
+    margin-top: 2px;
     display: flex;
     gap: 1em;
 }
@@ -61,8 +61,8 @@ nav{
     transition-duration: 0.6s;
 }.nav_link:hover    {
     border-bottom: 2px solid white;
-    transition-duration: 0.1s;
-    margin-bottom: 5px;
+    transition-duration: 0.2s;
+    padding-bottom: 5px;
 }
 
 .main    {
@@ -78,6 +78,7 @@ nav{
 }
 
 a   {
+    margin-bottom: -4px;
     text-decoration: none;
     font-family: 'Instrument Sans';
     font-size: 1em;
@@ -85,30 +86,37 @@ a   {
     opacity: 0.7;
 }
 
-.button {
-    text-decoration: none;
-    border: none;
+button {
+    padding: 0.7em 1.5em 0.8em 1.5em; 
+
     border: 1px solid white;
     border-radius: 20px;
-    padding: 10px 20px 12px 20px;
-    transition: 0.6s;
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    background-color: #ffffff00;
+    color: white;
+
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1em;
+    
     display: flex;
     align-items: center;
     text-align: center;
+    
     opacity: 0;
     filter: blur(4px);
-    height: 25px;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    transition: 0.6s;
+    
 }
 
-.button:hover  {
-    margin-top: 4px;
+button:hover  {
+    margin-top: 2px;
+    padding: 0.6em 1.5em 0.7em 1.5em;
+
     background-color: rgba(255, 255, 255, 0.213);
+
     transition: 0.3s;
-    padding-bottom: 13px;
     box-shadow: 0px 5px whitesmoke;
-    height: 20px;
 }
 
 h1 {
@@ -204,7 +212,7 @@ span:nth-child(13) {
 
 /*---------------------------*/
 
-.button:nth-child(1) {
+button:nth-child(1) {
     animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
