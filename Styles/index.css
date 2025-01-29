@@ -245,6 +245,7 @@ button:nth-child(1) {
     }
 
 	.button	{
+        display: block;
 		justify-content: center;
 		height: 26px;
 	}
@@ -266,6 +267,11 @@ button:nth-child(1) {
         display: block;
         padding: 1% 10%;
     }
+
+    .button	{
+        display: flex;
+		justify-content: center;
+	}
     
 }
 
